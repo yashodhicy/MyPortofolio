@@ -194,6 +194,7 @@ h3 {
   padding: 0.3rem;
   border: none;
   margin: 0 auto;
+  float: left;
 }
 
 button {
