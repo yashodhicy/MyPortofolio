@@ -39,9 +39,12 @@ header {
   justify-content: right;
   align-items: center;
   display: flex;
+  position: fixed;
+  top: 0;
   height: 2rem;
   width: 100%;
   margin: 0;
+  z-index: 999;
 }
 
 footer {
@@ -153,6 +156,22 @@ li {
 
 i:hover {
   filter: brightness(80%);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#action {
+  background-image: url("Action.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 1rem auto;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .work {
@@ -432,10 +451,6 @@ textarea:hover {
     align-items: right;
   }
 
-  #action {
-    margin: 0 auto;
-    border-radius: 50%;
-  }
 
   #contact-form {
     flex-direction: row;
