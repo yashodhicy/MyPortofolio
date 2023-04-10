@@ -2,16 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
-  vertical-align: center;
-}
-
 section {
   height: auto;
   position: relative;
   margin: 0;
   display: flex;
-  vertical-align: center;
+  align-items: center;
   padding: 0;
   width: 100%;
 }
@@ -88,7 +84,8 @@ footer {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: fit-content;
+
+  /* height: fit-content; */
   margin: 2rem 10%;
 }
 
@@ -223,14 +220,14 @@ i:hover {
 
 h3 {
   font-family: Poppins, sans-serif;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 2rem;
   text-align: center;
   color: #172b4d;
 }
 
 .tags {
-  min-width: fit-content;
+  /* min-width: fit-content; */
   padding: 0.3rem;
   border: none;
   margin: 0 auto;
@@ -257,7 +254,8 @@ button {
 .project-ancor {
   width: fit-content;
   margin: 1rem auto;
-  height: fit-content;
+
+  /* height: fit-content; */
   border-radius: 10px;
 }
 
@@ -451,9 +449,9 @@ textarea:hover {
     flex-direction: column;
     width: 68%;
     margin: 0 auto;
-    align-items: right;
-  }
 
+    /* align-items: right; */
+  }
 
   #contact-form {
     flex-direction: row;
@@ -516,7 +514,6 @@ textarea:hover {
   .line2 {
     display: none;
   }
-
 }
 
 /* media query to solve the responsive problem in desktop-nav with background */
@@ -545,10 +542,10 @@ textarea:hover {
   text-decoration: none;
   color: #344563;
   font-family: Inter, sans-serif;
-  font-style: bold;
+  font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  transition: font-size 2s font-weight 2s color 2s;
+  transition: font-size 3s ease, font-weight 2s ease, color 2s ease;
 }
 
 /* media query for hide desktop-nav in mobile version */
@@ -577,6 +574,7 @@ textarea:hover {
   #desktop-nav ul li {
     text-align: left;
   }
+
   #cancel-btn {
     position: fixed;
     top: 0;
