@@ -15,7 +15,7 @@ section {
 #container {
   flex-direction: column;
   align-items: center;
-  background-image: url(background.png);
+  background-image: url(images/background.png);
   background-size: cover;
   min-height: 100%;
 }
@@ -23,7 +23,7 @@ section {
 #container2 {
   flex-direction: column;
   align-items: center;
-  background-image: url(ill1.png);
+  background-image: url(images/ill1.png);
   background-position: -8rem 100%;
   background-size: 20%;
   background-repeat: no-repeat;
@@ -136,16 +136,18 @@ a {
 }
 
 ul {
-  display: inline-block;
+  display: flex;
   list-style: none;
   align-items: center;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 li {
   align-items: center;
-  display: inline-block;
+  display: flex;
   margin: 0;
 }
 
@@ -160,7 +162,7 @@ i:hover {
 }
 
 #action {
-  background-image: url("Action.png");
+  background-image: url("images/Action.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -198,6 +200,7 @@ i:hover {
   bottom: 0;
   border-radius: 8px;
   background-color: white;
+  align-items: center;
 }
 
 .work-card2 {
@@ -240,7 +243,7 @@ button {
 .see_project {
   background-color: #2aa874;
   align-items: center;
-  margin: 0 auto;
+  margin: 1rem auto;
   font-family: Inter, sans-serif;
   color: #d2d2d2;
   border-radius: 5px;
@@ -273,7 +276,7 @@ button {
 #contact-form {
   display: flex;
   flex-direction: column;
-  background-image: url(Frame.png);
+  background-image: url(images/Frame.png);
   background-position-y: 96%;
   background-position-x: 100%;
   background-repeat: no-repeat;
@@ -419,7 +422,7 @@ textarea:hover {
   #container {
     min-height: max-content;
     align-items: center;
-    background-image: url(desktopback.svg);
+    background-image: url(images/desktopback.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 55rem;
@@ -427,7 +430,7 @@ textarea:hover {
   }
 
   .background2 {
-    background-image: url(ill2.png);
+    background-image: url(images/ill2.png);
     background-position: 100% 0;
     background-size: cover;
     position: absolute;
@@ -465,7 +468,7 @@ textarea:hover {
   }
 
   .formbackground1 {
-    background-image: url(lastb1.svg);
+    background-image: url(images/lastb1.svg);
     background-position: 0 0;
     background-size: contain;
     background-repeat: no-repeat;
@@ -478,7 +481,7 @@ textarea:hover {
   }
 
   .formbackground2 {
-    background-image: url(lastb2.svg);
+    background-image: url(images/lastb2.svg);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -490,7 +493,7 @@ textarea:hover {
   }
 
   .formbackground3 {
-    background-image: url(lastb3.svg);
+    background-image: url(images/lastb3.svg);
     background-position: 100% 100%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -589,7 +592,7 @@ textarea:hover {
   }
 
   #cancel-btn {
-    background-image: url(Icon.png);
+    background-image: url(images/Icon.png);
     background-size: contain;
     position: fixed;
     top: 1rem;
