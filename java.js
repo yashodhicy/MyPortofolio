@@ -3,22 +3,22 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const mobilelistlink = document.querySelectorAll('#mobilelist li a');
 const cancelBtn = document.querySelector('#cancel-btn');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.add('hide');
-  cancelBtn.classList.remove('hide');
-  mobileMenu.style.display = 'flex';
-});
+const toggleMobileMenu = () => {
+ hamburger.classList.toggle('hide');
+ cancelBtn.classList.toggle('hide');
+ mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+}
+
+const hideMobileMenu = () => {
+ hamburger.classList.remove('hide');
+ cancelBtn.classList.add('hide');
+ mobileMenu.style.display = 'none';
+}
+
+hamburger.addEventListener('click', toggleMobileMenu);
 
 mobilelistlink.forEach((a) => {
-  a.addEventListener('click', () => {
-    mobileMenu.style.display = 'none';
-    cancelBtn.classList.add('hide');
-    hamburger.classList.remove('hide');
-  });
+ a.addEventListener('click', hideMobileMenu);
 });
 
-cancelBtn.addEventListener('click', () => {
-  cancelBtn.classList.add('hide');
-  hamburger.classList.remove('hide');
-  mobileMenu.style.display = 'none';
-});
+cancelBtn.addEventListener('click', hideMobileMenu);
