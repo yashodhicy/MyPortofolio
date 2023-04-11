@@ -567,8 +567,16 @@ textarea:hover {
     height: 100vh;
     width: 100%;
     z-index: 2;
+  }
+
+  #desktop-nav ul li a {
+    text-decoration: none;
     color: #3a4a42;
-    font-weight: 700;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    transition: font-size 3s ease, font-weight 2s ease, color 2s ease;
   }
 
   #desktop-nav ul li {
@@ -576,10 +584,13 @@ textarea:hover {
   }
 
   #cancel-btn {
+    background-image: url(Icon.png);
+    background-size: contain;
     position: fixed;
-    top: 0;
+    top: 1rem;
     right: 1rem;
-    color: #67798e;
+    width: 12px;
+    height: 12px;
     background-color: transparent;
   }
 
