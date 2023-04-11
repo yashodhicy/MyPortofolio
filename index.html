@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>My Portofolio</title>
+    <script defer src="java.js"></script>
+    <title>My Portfolio</title>
 </head>
 
 <body>
@@ -18,14 +19,15 @@
                 <span class="line"></span>
             </button>
         </nav>
+        <button id="cancel-btn" class="hide"></button>
     </header>
 
     <main>
         <section id="container">
-            <nav id="desktop-nav">
-                <ul>
-                    <li><a href="#text-decoration: none;">Portofolio</a></li>
-                    <li><a href="#container">About</a></li>
+            <nav id="desktop-nav" class="mobile-menu">
+                <ul id="mobilelist">
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#container2">About</a></li>
                     <li><a href="#contact-form">Contact</a></li>
                 </ul>
             </nav>
@@ -52,7 +54,7 @@
                                         alt="angellist logo"></a></i></li>
                     </ul>
                 </div>
-                <button id="action"><img src="Action.png" alt="Navigate button"></button>
+                <button id="action"></button>
             </div>
         </section>
 
