@@ -618,3 +618,9 @@ textarea:hover {
 .active {
   display: flex;
 }
+
+#popup {
+  display: none;
+  height: 100vh;
+  background-color: blue;
+}
