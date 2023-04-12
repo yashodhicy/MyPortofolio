@@ -383,6 +383,97 @@ textarea:hover {
 
 /* end-form */
 
+/* cancel button */
+.hide {
+  display: none !important;
+}
+
+.active {
+  display: flex;
+}
+
+/* popup window */
+#popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110vh;
+  background-color: white;
+  overflow: auto;
+}
+
+#popup-image {
+  width: 90%;
+  margin: 1rem 1rem;
+  border-radius: 8px;
+}
+
+#primary-text {
+  margin-left: 1rem;
+  max-width: 60%;
+  max-height: 179px;
+  overflow-y: hidden;
+}
+
+#popup h2 {
+  color: #172b4d;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#popup div ul {
+  margin-top: 1rem;
+}
+
+#popup p {
+  margin: 0 1rem;
+  font-size: 16px;
+}
+
+.livelink {
+  margin-left: 0.5rem;
+  height: 20px;
+  width: 17.99px;
+}
+
+.linkbutton {
+  display: flex;
+  height: 48px;
+}
+
+.button {
+  background-color: #2aa874;
+  align-items: center;
+  margin: 1rem auto;
+  font-family: Inter, sans-serif;
+  color: #d2d2d2;
+  border-radius: 5px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+}
+
+#cancel-btn2 {
+  background-image: url(images/Icon.png);
+  background-size: contain;
+  position: fixed;
+  top: 2.6rem;
+  right: 2.9rem;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  z-index: 1000;
+}
+
 /* -------------Desktop version ---------- */
 
 @media screen and (min-width: 768px) {
@@ -519,6 +610,69 @@ textarea:hover {
     border-radius: 4rem;
     padding: 0.4rem;
   }
+
+  /* Desktop styles  popup */
+
+  #popup {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    height: 100vh;
+    background-color: white;
+  }
+
+  #popup-image {
+    width: 90%;
+    position: relative;
+    margin-left: 5%;
+    top: 1rem;
+    border-radius: 8px;
+  }
+
+  #primary-text {
+    position: relative;
+    margin-left: 5%;
+    max-width: 60%;
+    max-height: 179px;
+    overflow-y: hidden;
+  }
+
+  #popup div ul {
+    margin-top: 1rem;
+  }
+
+  #popup p {
+    max-width: 90%;
+    margin: 0 5%;
+    font-size: 16px;
+  }
+
+  .display {
+    background-color: rgb(90, 82, 82);
+  }
+
+  .linkbutton {
+    position: relative;
+    top: 50%;
+    right: 5%;
+    display: flex;
+    height: 48px;
+  }
+
+  #cancel-btn2 {
+    background-image: url(images/Icon.png);
+    background-size: contain;
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    z-index: 1000;
+  }
 }
 
 /* media query to solve the responsive problem in desktop-nav with background */
@@ -608,34 +762,4 @@ textarea:hover {
     gap: 12px;
     margin-top: 20px;
   }
-}
-
-/* cancel button */
-.hide {
-  display: none !important;
-}
-
-.active {
-  display: flex;
-}
-
-#popup {
-  height: 100vh;
-  background-color: blue;
-  display: flex;
-  flex-direction: column;
-}
-
-.button {
-  background-color: #2aa874;
-  align-items: center;
-  margin: 1rem auto;
-  font-family: Inter, sans-serif;
-  color: #d2d2d2;
-  border-radius: 5px;
-}
-
-.button-group {
-  display: flex;
-  flex-direction: row;
 }
