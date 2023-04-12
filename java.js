@@ -89,14 +89,32 @@ projectDetails.forEach((project) => {
 });
 
 const preview = document.querySelector('.see_project');
+
 const popup = document.querySelector('#popup')
 
 const projectdetails = () => {
-  preview.classList.toggle('hide');
-  popup.style.display = popup.style.display === 'flex' ? 'none' : 'flex';
-}
+    
+    popup.classList.toggle('hide');
 
-preview.addEventListener('click',projectDetails);
+    const popupImage = document.querySelector('#popup-image');
+    const popupTitle = document.querySelector('#popup-title');
+    const popupTechs = document.querySelector('#popup-techs');
+    const popupDescription = document.querySelector('#popup-description');
+    popupTechs.textContent='';
+
+    popupImage.src = projectDetails[0].image;
+    popupTitle.textContent = projectDetails[0].name;
+
+    projectDetails[0].technologies.forEach((tech) => {
+        const techList = document.createElement('li');
+        techList.textContent = tech;
+        popupTechs.appendChild(techList);
+    });
+    
+    popupDescription.textContent = projectDetails[0].description;
+};
+
+preview.addEventListener('click', projectdetails);
 
 
 
