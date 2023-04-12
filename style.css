@@ -612,7 +612,7 @@ textarea:hover {
 
 /* cancel button */
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .active {
@@ -620,7 +620,22 @@ textarea:hover {
 }
 
 #popup {
-  display: none;
   height: 100vh;
   background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  background-color: #2aa874;
+  align-items: center;
+  margin: 1rem auto;
+  font-family: Inter, sans-serif;
+  color: #d2d2d2;
+  border-radius: 5px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
 }
