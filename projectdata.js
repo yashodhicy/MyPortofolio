@@ -200,3 +200,32 @@ form.addEventListener('submit', (event) => {
     formText.insertAdjacentElement('afterend', errorMessage);
   }
 });
+
+// get references to the form and its input fields
+const form = document.getElementById('contact-form');
+const nameInput = form.elements.username;
+const emailInput = form.elements.email;
+const messageInput = form.elements.message;
+
+// load data from local storage and pre-fill input fields if data exists
+const localdata = JSON.parse(localStorage.getItem('formData'));
+if (localdata) {
+  nameInput.value = localdata.name;
+  emailInput.value = localdata.email;
+  messageInput.value = localdata.message;
+}
+
+// save data to local storage when input fields change
+form.addEventListener('input', () => {
+  const formData = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: messageInput.value
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+
+
+
+
