@@ -480,9 +480,10 @@ textarea:hover {
 
 #popup .tags button {
   border-radius: 4px;
-  color: #3A4A42;
+  color: #3a4a42;
   font-weight: 600;
 }
+
 /* -------------Desktop version ---------- */
 
 @media screen and (min-width: 768px) {
@@ -700,6 +701,7 @@ textarea:hover {
   #popup .tags {
     margin: 2px 0;
     border-radius: 4px;
+
     /* gap: 0.1rem; */
   }
 
