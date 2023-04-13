@@ -176,7 +176,6 @@ cancel.addEventListener('click', () => {
 // add validation to the form
 
 const form = document.querySelector('#form');
-console.log('#form');
 const emailText = document.querySelector('input[type="email"]');
 
 form.addEventListener('submit', (event) => {
@@ -198,12 +197,12 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-//get references to the form and its input fields
+// get references to the form and its input fields
 const formObject = {
   nameInput: form.elements.username,
   emailInput: form.elements.email,
-  messageInput: form.elements.message
-}
+  messageInput: form.elements.message,
+};
 
 // load data from local storage and pre-fill input fields if data exists
 const localdata = JSON.parse(localStorage.getItem('formData'));
