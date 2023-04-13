@@ -177,7 +177,6 @@ cancel.addEventListener('click', () => {
   main.classList.remove('display');
 });
 
-
 // add validation to the form
 
 const form = document.querySelector('#form');
@@ -186,8 +185,7 @@ const emailText = document.querySelector('input[type="email"]');
 form.addEventListener('submit', (event) => {
   if (emailText.value !== emailText.value.toLowerCase()) {
     event.preventDefault();
-    console.log('clicked');
-    
+
     // Remove any previous error messages
     const previousErrorMessage = form.querySelector('.error-message');
     if (previousErrorMessage) {
@@ -198,9 +196,7 @@ form.addEventListener('submit', (event) => {
     const formText = document.querySelector('#form textarea');
     errorMessage.textContent = 'Please enter your email in lower case.Your form is not submitted.';
     errorMessage.classList.add('error-message');
-    
+
     formText.insertAdjacentElement('afterend', errorMessage);
   }
 });
-
-
