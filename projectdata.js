@@ -89,7 +89,6 @@ const projectDetails = [
 ];
 
 // implement popup window
-
 const popup = document.querySelector('#popup');
 const cancel = document.querySelector('#cancel-btn2');
 const main = document.querySelector('main');
@@ -151,7 +150,6 @@ projectDetails.forEach((project) => {
   const seeproject = document.createElement('button');
   seeproject.innerText = 'see Project';
   seeproject.classList.add('see_project');
-  // seeproject.setAttribute('id', `project-${index}`);
   textEl.appendChild(seeproject);
 
   seeproject.addEventListener('click', () => {
@@ -160,8 +158,6 @@ projectDetails.forEach((project) => {
 
   fragment.appendChild(projectDiv);
 });
-
-// projectContainer.appendChild(fragment);
 
 workEL.appendChild(fragment);
 document.body.appendChild(workEL);
@@ -202,7 +198,6 @@ form.addEventListener('submit', (event) => {
 });
 
 // get references to the form and its input fields
-const form = document.getElementById('contact-form');
 const nameInput = form.elements.username;
 const emailInput = form.elements.email;
 const messageInput = form.elements.message;
@@ -210,9 +205,9 @@ const messageInput = form.elements.message;
 // load data from local storage and pre-fill input fields if data exists
 const localdata = JSON.parse(localStorage.getItem('formData'));
 if (localdata) {
-  nameInput.value = localdata.name;
-  emailInput.value = localdata.email;
-  messageInput.value = localdata.message;
+  nameInput.value = (localdata.name.length > 0) ? localdata.name : '';
+  emailInput.value = (localdata.email.length > 0) ? localdata.email : '';
+  messageInput.value = (localdata.message.length > 0) ? localdata.message : '';
 }
 
 // save data to local storage when input fields change
