@@ -484,6 +484,16 @@ textarea:hover {
   font-weight: 600;
 }
 
+/* validation error message */
+
+.error-message {
+  color: #ff6163;
+  font-family: inter, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
 /* -------------Desktop version ---------- */
 
 @media screen and (min-width: 768px) {
@@ -710,6 +720,15 @@ textarea:hover {
     color: #344563;
     font-weight: bold;
   }
+
+  .error-message {
+    color: #ff6163;
+    font-family: inter, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
 }
 
 /* media query to solve the responsive problem in desktop-nav with background */
