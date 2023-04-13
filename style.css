@@ -238,6 +238,7 @@ button {
   padding: 0.5rem;
   font-family: Inter, sans-serif;
   color: #3a4a42;
+  border-radius: 4px;
 }
 
 .see_project {
@@ -477,6 +478,11 @@ textarea:hover {
   z-index: 1000;
 }
 
+#popup .tags button {
+  border-radius: 4px;
+  color: #3A4A42;
+  font-weight: 600;
+}
 /* -------------Desktop version ---------- */
 
 @media screen and (min-width: 768px) {
@@ -656,6 +662,10 @@ textarea:hover {
     font-size: 16px;
   }
 
+  #popup-techs {
+    justify-content: flex-start;
+  }
+
   .display {
     background-color: rgb(90, 82, 82);
   }
@@ -685,6 +695,18 @@ textarea:hover {
     height: 50px;
     background-color: transparent;
     z-index: 1000;
+  }
+
+  #popup .tags {
+    margin: 2px 0;
+    border-radius: 4px;
+    /* gap: 0.1rem; */
+  }
+
+  #popup .tags button {
+    border-radius: 4px;
+    color: #344563;
+    font-weight: bold;
   }
 }
 
