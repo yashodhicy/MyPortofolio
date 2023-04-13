@@ -176,3 +176,27 @@ cancel.addEventListener('click', () => {
   popup.classList.toggle('hide');
   main.classList.remove('display');
 });
+
+// add validation to the form
+
+const form = document.querySelector('#form');
+const emailText = document.querySelector('input[type="email"]');
+
+form.addEventListener('submit', (event) => {
+  if (emailText.value !== emailText.value.toLowerCase()) {
+    event.preventDefault();
+
+    // Remove any previous error messages
+    const previousErrorMessage = form.querySelector('.error-message');
+    if (previousErrorMessage) {
+      form.removeChild(previousErrorMessage);
+    }
+
+    const errorMessage = document.createElement('p');
+    const formText = document.querySelector('#form textarea');
+    errorMessage.textContent = 'Please enter your email in lower case.Your form is not submitted.';
+    errorMessage.classList.add('error-message');
+
+    formText.insertAdjacentElement('afterend', errorMessage);
+  }
+});

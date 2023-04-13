@@ -484,6 +484,16 @@ textarea:hover {
   font-weight: 600;
 }
 
+/* validation error message */
+
+.error-message {
+  color: #ff6163;
+  font-family: inter, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
 /* -------------Desktop version ---------- */
 
 @media screen and (min-width: 768px) {
@@ -578,7 +588,7 @@ textarea:hover {
     left: -4rem;
     width: 100%;
     height: 60%;
-    z-index: 1;
+    z-index: -1;
   }
 
   .formbackground2 {
@@ -709,6 +719,14 @@ textarea:hover {
     border-radius: 4px;
     color: #344563;
     font-weight: bold;
+  }
+
+  .error-message {
+    color: #ff6163;
+    font-family: inter, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 
