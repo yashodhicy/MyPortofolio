@@ -176,6 +176,7 @@ cancel.addEventListener('click', () => {
 // add validation to the form
 
 const form = document.querySelector('#form');
+console.log('#form');
 const emailText = document.querySelector('input[type="email"]');
 
 form.addEventListener('submit', (event) => {
@@ -197,25 +198,27 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// get references to the form and its input fields
-const nameInput = form.elements.username;
-const emailInput = form.elements.email;
-const messageInput = form.elements.message;
+//get references to the form and its input fields
+const formObject = {
+  nameInput: form.elements.username,
+  emailInput: form.elements.email,
+  messageInput: form.elements.message
+}
 
 // load data from local storage and pre-fill input fields if data exists
 const localdata = JSON.parse(localStorage.getItem('formData'));
 if (localdata) {
-  nameInput.value = (localdata.name.length > 0) ? localdata.name : '';
-  emailInput.value = (localdata.email.length > 0) ? localdata.email : '';
-  messageInput.value = (localdata.message.length > 0) ? localdata.message : '';
+  formObject.nameInput.value = (localdata.name.length > 0) ? localdata.name : '';
+  formObject.emailInput.value = (localdata.email.length > 0) ? localdata.email : '';
+  formObject.messageInput.value = (localdata.message.length > 0) ? localdata.message : '';
 }
 
 // save data to local storage when input fields change
 form.addEventListener('input', () => {
   const formData = {
-    name: nameInput.value,
-    email: emailInput.value,
-    message: messageInput.value,
+    name: formObject.nameInput.value,
+    email: formObject.emailInput.value,
+    message: formObject.messageInput.value,
   };
   localStorage.setItem('formData', JSON.stringify(formData));
 });
