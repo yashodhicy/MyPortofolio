@@ -122,7 +122,7 @@ const projectdetailspopup = (project) => {
   createButtonList(project, popupTechs);
   popupDescription.innerText = project.description;
 
-  popup.style.display = 'block';
+  popup.style.display = 'flex';
 };
 
 // create work section

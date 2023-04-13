@@ -395,6 +395,7 @@ textarea:hover {
 /* popup window */
 #popup {
   display: none;
+  flex-direction: column;
   position: fixed;
   z-index: 999;
   top: 0;
@@ -406,6 +407,7 @@ textarea:hover {
 }
 
 #popup-image {
+  position: relative;
   width: 90%;
   margin: 1rem 1rem;
   border-radius: 8px;
@@ -446,6 +448,7 @@ textarea:hover {
 .linkbutton {
   display: flex;
   height: 48px;
+  font-size: large;
 }
 
 .button {
@@ -614,34 +617,37 @@ textarea:hover {
   /* Desktop styles  popup */
 
   #popup {
+    flex-direction: column;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     width: 90%;
-    height: 100vh;
-    background-color: white;
+    height: 99%;
   }
 
   #popup-image {
     width: 90%;
-    position: relative;
+    height: 30rem;
+    position: absolute;
     margin-left: 5%;
-    top: 1rem;
+    top: 3rem;
     border-radius: 8px;
   }
 
-  #primary-text {
-    position: relative;
-    margin-left: 5%;
-    max-width: 60%;
-    max-height: 179px;
-    overflow-y: hidden;
+  #content {
+    margin-top: 36rem;
   }
 
-  #popup div ul {
-    margin-top: 1rem;
+  #primary-text {
+    flex-direction: column;
+    position: relative;
+    margin-left: 5%;
+    max-width: 58%;
+    margin-top: 2rem;
+    z-index: 2000;
+    overflow-y: visible;
   }
 
   #popup p {
@@ -655,19 +661,26 @@ textarea:hover {
   }
 
   .linkbutton {
-    position: relative;
-    top: 50%;
-    right: 5%;
     display: flex;
     height: 48px;
+    font-size: large;
+  }
+
+  .button-group {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: 5%;
+    top: 37rem;
+    gap: 2rem;
   }
 
   #cancel-btn2 {
-    background-image: url(images/Icon.png);
+    background-image: url(images/Disabled.png);
     background-size: contain;
     position: fixed;
-    top: 2rem;
-    right: 5rem;
+    top: 1%;
+    right: 10%;
     width: 50px;
     height: 50px;
     background-color: transparent;
