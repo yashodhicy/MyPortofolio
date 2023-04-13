@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script defer src="java.js"></script>
+    <script defer src="projectdata.js"></script>
     <title>My Portfolio</title>
 </head>
 
@@ -63,100 +63,25 @@
             <div class="line2"></div>
         </div>
 
-        <section class="work">
-
-            <div class="work-card">
-                <div class="text">
-                    <h3>Multi-Post Stories <br>Gain+Glory</h3>
-                    <ul>
-                        <li class="tags"><button> Ruby on Rails</button></li>
-                        <li class="tags"><button> CSS</button></li>
-                        <li class="tags"><button> JavaScript</button></li>
-                        <li class="tags"><button> HTML</button></li>
-                    </ul>
-
-
-                    <a href="https://github.com/yashodhicy/Microverseday3pr"><button class="see_project">See
-                            Project</button></a>
-                </div>
+        <!-- popup menu -->
+        <!-- <div id="popup-overlay"></div> -->
+        <div id="popup" class="hide">
+            <button id="cancel-btn2"></button>
+            
+            <img id="popup-image">
+            <div id="content">
+            <div id="primary-text">
+            <h2 id="popup-title">test</h2>
+            <ul id="popup-techs"></ul>
             </div>
-            <div class="work-card">
-                <div class="text">
-                    <h3>Multi-Post Stories <br>Gain+Glory</h3>
-                    <ul>
-                        <li class="tags"><button> Ruby on Rails</button></li>
-                        <li class="tags"><button> CSS</button></li>
-                        <li class="tags"><button> JavaScript</button></li>
-                        <li class="tags"><button> HTML</button></li>
-                    </ul>
-
-
-                    <a href="https://github.com/yashodhicy/Microverseday3pr"><button class="see_project">See
-                            Project</button></a>
-                </div>
+            <p id="popup-description"></p>
+            <div class="button-group">
+                <button id="popup-livelink" class="button linkbutton">See Live<img class="livelink" src="images/seelive.png"></button>
+                <button id="popup-source" class="button linkbutton">See Source<img class="livelink" src="images/gitwhite.png"></button>
             </div>
-            <div class="work-card">
-                <div class="text">
-                    <h3>Multi-Post Stories <br>Gain+Glory</h3>
-                    <ul>
-                        <li class="tags"><button> Ruby on Rails</button></li>
-                        <li class="tags"><button> CSS</button></li>
-                        <li class="tags"><button> JavaScript</button></li>
-                        <li class="tags"><button> HTML</button></li>
-                    </ul>
-
-
-                    <a href="https://github.com/yashodhicy/Microverseday3pr"><button class="see_project">See
-                            Project</button></a>
-                </div>
             </div>
-            <div class="work-card">
-                <div class="text">
-                    <h3>Multi-Post Stories <br>Gain+Glory</h3>
-                    <ul>
-                        <li class="tags"><button> Ruby on Rails</button></li>
-                        <li class="tags"><button> CSS</button></li>
-                        <li class="tags"><button> JavaScript</button></li>
-                        <li class="tags"><button> HTML</button></li>
-                    </ul>
-
-
-                    <a href="https://github.com/yashodhicy/Microverseday3pr"><button class="see_project">See
-                            Project</button></a>
-                </div>
-            </div>
-            <div class="work-card">
-                <div class="text">
-                    <h3>Multi-Post Stories <br>Gain+Glory</h3>
-                    <ul>
-                        <li class="tags"><button> Ruby on Rails</button></li>
-                        <li class="tags"><button> CSS</button></li>
-                        <li class="tags"><button> JavaScript</button></li>
-                        <li class="tags"><button> HTML</button></li>
-                    </ul>
-
-
-                    <a href="https://github.com/yashodhicy/Microverseday3pr"><button class="see_project">See
-                            Project</button></a>
-                </div>
-            </div>
-            <div class="work-card">
-                <div class="text">
-                    <h3>Multi-Post Stories <br>Gain+Glory</h3>
-                    <ul>
-                        <li class="tags"><button> Ruby on Rails</button></li>
-                        <li class="tags"><button> CSS</button></li>
-                        <li class="tags"><button> JavaScript</button></li>
-                        <li class="tags"><button> HTML</button></li>
-                    </ul>
-
-
-                    <a href="https://github.com/yashodhicy/Microverseday3pr"><button class="see_project">See
-                            Project</button></a>
-                </div>
-            </div>
-        </section>
-
+        </div>
+        <!-- end of the popup menu -->
         <section id="container2">
             <div class="aboutme">
                 <h2>About me</h2>
@@ -220,10 +145,11 @@
             <h2 id="msg">I'm always interested in hearing about new projects, so if you'd like to chat please get in
                 touch.</h2>
             <form id="form" action="https://formspree.io/f/xlekprob" method="post">
-                <input type="text" placeholder="Full name" maxlength="30" name="username" required title="Please enter your name.">
+                <input type="text" placeholder="Full name" maxlength="30" name="username" required
+                    title="Please enter your name.">
                 <input type="email" placeholder="Email address" name="email" required itle="Please enter your email.">
-                <textarea maxlength="500" placeholder="Hey I'd like to connect to" required ></textarea>
-                <button type="submit" >Get in touch</button>
+                <textarea maxlength="500" placeholder="Hey I'd like to connect to" required></textarea>
+                <button type="submit">Get in touch</button>
                 <a href="#">yashodhichathurangi94@gmail.com</a>
             </form>
             <div class="formbackground1"></div>
@@ -233,7 +159,8 @@
         <footer>
             <div class="icon-bar">
                 <ul>
-                    <li><i><a class="iconan" href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter logo">
+                    <li><i><a class="iconan" href="https://www.twitter.com"><img src="images/twitter.png"
+                                    alt="twitter logo">
                             </a></i></li>
                     <li><i> <a class="iconan" href="https://www.Linkedin.com"><img src="images/Linkedin icon.png"
                                     alt="Linkedin logo"></a></i></li>

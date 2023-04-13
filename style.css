@@ -238,6 +238,7 @@ button {
   padding: 0.5rem;
   font-family: Inter, sans-serif;
   color: #3a4a42;
+  border-radius: 4px;
 }
 
 .see_project {
@@ -383,6 +384,106 @@ textarea:hover {
 
 /* end-form */
 
+/* cancel button */
+.hide {
+  display: none !important;
+}
+
+.active {
+  display: flex;
+}
+
+/* popup window */
+#popup {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110vh;
+  background-color: white;
+  overflow: auto;
+}
+
+#popup-image {
+  position: relative;
+  width: 90%;
+  margin: 1rem 1rem;
+  border-radius: 8px;
+}
+
+#primary-text {
+  margin-left: 1rem;
+  max-width: 60%;
+  max-height: 179px;
+  overflow-y: hidden;
+}
+
+#popup h2 {
+  color: #172b4d;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#popup div ul {
+  margin-top: 1rem;
+}
+
+#popup p {
+  margin: 0 1rem;
+  font-size: 16px;
+}
+
+.livelink {
+  margin-left: 0.5rem;
+  height: 20px;
+  width: 17.99px;
+}
+
+.linkbutton {
+  display: flex;
+  height: 48px;
+  font-size: large;
+}
+
+.button {
+  background-color: #2aa874;
+  align-items: center;
+  margin: 1rem auto;
+  font-family: Inter, sans-serif;
+  color: #d2d2d2;
+  border-radius: 5px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+}
+
+#cancel-btn2 {
+  background-image: url(images/Icon.png);
+  background-size: contain;
+  position: fixed;
+  top: 2.6rem;
+  right: 2.9rem;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+#popup .tags button {
+  border-radius: 4px;
+  color: #3a4a42;
+  font-weight: 600;
+}
+
 /* -------------Desktop version ---------- */
 
 @media screen and (min-width: 768px) {
@@ -519,6 +620,96 @@ textarea:hover {
     border-radius: 4rem;
     padding: 0.4rem;
   }
+
+  /* Desktop styles  popup */
+
+  #popup {
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    height: 99%;
+  }
+
+  #popup-image {
+    width: 90%;
+    height: 30rem;
+    position: absolute;
+    margin-left: 5%;
+    top: 3rem;
+    border-radius: 8px;
+  }
+
+  #content {
+    margin-top: 36rem;
+  }
+
+  #primary-text {
+    flex-direction: column;
+    position: relative;
+    margin-left: 5%;
+    max-width: 58%;
+    margin-top: 2rem;
+    z-index: 2000;
+    overflow-y: visible;
+  }
+
+  #popup p {
+    max-width: 90%;
+    margin: 0 5%;
+    font-size: 16px;
+  }
+
+  #popup-techs {
+    justify-content: flex-start;
+  }
+
+  .display {
+    background-color: rgb(90, 82, 82);
+  }
+
+  .linkbutton {
+    display: flex;
+    height: 48px;
+    font-size: large;
+  }
+
+  .button-group {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: 5%;
+    top: 37rem;
+    gap: 2rem;
+  }
+
+  #cancel-btn2 {
+    background-image: url(images/Disabled.png);
+    background-size: contain;
+    position: fixed;
+    top: 1%;
+    right: 10%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    z-index: 1000;
+  }
+
+  #popup .tags {
+    margin: 2px 0;
+    border-radius: 4px;
+
+    /* gap: 0.1rem; */
+  }
+
+  #popup .tags button {
+    border-radius: 4px;
+    color: #344563;
+    font-weight: bold;
+  }
 }
 
 /* media query to solve the responsive problem in desktop-nav with background */
@@ -608,13 +799,4 @@ textarea:hover {
     gap: 12px;
     margin-top: 20px;
   }
-}
-
-/* cancel button */
-.hide {
-  display: none;
-}
-
-.active {
-  display: flex;
 }
