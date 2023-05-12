@@ -36,6 +36,31 @@ const createButtonList = (project, techlist) => {
 
 const projectDetails = [
   {
+    name: 'awsome books',
+    description: 'Lorem ipsum dolor sit amet',
+    image: 'images/awsomebooks.png',
+    technologies: ['Ruby on rails', 'HTML', 'CSS', 'JavaScript'],
+    live: 'https://yashodhicy.github.io/awsomebooks/#booklist',
+    source: 'https://github.com/yashodhicy/awsomebooks',
+  },
+  {
+    name: 'JCR pictures',
+    description: 'Lorem ipsum dolor sit amet',
+    image: 'images/JCR1.png',
+    technologies: ['Ruby on rails', 'HTML', 'CSS', 'JavaScript'],
+    live: 'https://yashodhicy.github.io/JCRPictures/',
+    source: 'https://github.com/yashodhicy/JCRPictures',
+  },
+
+  {
+    name: 'todo list',
+    description: 'Lorem ipsum dolor sit amet',
+    image: 'images/todolist.png',
+    technologies: ['Ruby on rails', 'HTML', 'CSS', 'JavaScript'],
+    live: 'https://yashodhicy.github.io/todo-list/',
+    source: 'https://github.com/yashodhicy/todo-list',
+  },
+  {
     name: 'Keeping track of hundreds of components',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     image: 'images/popupmobile.png',
@@ -43,32 +68,6 @@ const projectDetails = [
     live: 'https://yashodhicy.github.io/',
     source: 'https://github.com/yashodhicy/MyPortofolio',
   },
-  {
-    name: 'Project 2',
-    description: 'Lorem ipsum dolor sit amet',
-    image: 'images/popupmobile.png',
-    technologies: ['Ruby on rails', 'HTML', 'CSS', 'JavaScript'],
-    live: 'https://yashodhicy.github.io/',
-    source: 'https://github.com/yashodhicy/MyPortofolio',
-  },
-  {
-    name: 'Project 3',
-    description: 'Lorem ipsum dolor sit amet',
-    image: 'images/popupmobile.png',
-    technologies: ['Ruby on rails', 'HTML', 'CSS', 'JavaScript'],
-    live: 'https://yashodhicy.github.io/',
-    source: 'https://github.com/yashodhicy/MyPortofolio',
-  },
-
-  {
-    name: 'Project 4',
-    description: 'Lorem ipsum dolor sit amet',
-    image: 'images/popupmobile.png',
-    technologies: ['Ruby on rails', 'HTML', 'CSS', 'JavaScript'],
-    live: 'https://yashodhicy.github.io/',
-    source: 'https://github.com/yashodhicy/MyPortofolio',
-  },
-
   {
     name: 'Project 5',
     description: 'Lorem ipsum dolor sit amet',
